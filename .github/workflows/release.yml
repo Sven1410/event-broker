@@ -32,6 +32,10 @@ jobs:
       #    npm explore better-sqlite3 -- npm run install
       #    npm run lint
       #    npm run test
+      - name: Create Tag 
+        uses: rickstaa/action-create-tag@v1.7.2
+        with:
+          tag: ${{ github.event.inputs.version }}
       - name: Update CHANGELOG
         id: changelog
         uses: requarks/changelog-action@v1
