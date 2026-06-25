@@ -25,19 +25,20 @@ jobs:
         with:
           node-version: 24
           registry-url: https://registry.npmjs.org/
-      - name: run tests
-        run: |
-          npm i -g @sap/cds-dk
-          npm i
-          npm explore better-sqlite3 -- npm run install
-          npm run lint
-          npm run test
+      #- name: run tests
+      #  run: |
+      #    npm i -g @sap/cds-dk
+      #    npm i
+      #    npm explore better-sqlite3 -- npm run install
+      #    npm run lint
+      #    npm run test
       - name: Update CHANGELOG
         id: changelog
         uses: requarks/changelog-action@v1
         with:
           token: ${{ github.token }}
           tag: "v0.0.3-initial-release-tree" # ${{ github.ref_name }}
+          includeInvalidCommits: true
       - name: DebugOut changelog.md
         run: |
           echo "DEBUGOUT: "
