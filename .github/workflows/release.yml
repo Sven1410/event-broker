@@ -33,18 +33,18 @@ jobs:
         with:
           node-version: 24
           registry-url: https://registry.npmjs.org/
-      #- name: run tests
-      #  run: |
-      #    npm i -g @sap/cds-dk
-      #    npm i
-      #    npm explore better-sqlite3 -- npm run install
-      #    npm run lint
-      #    npm run test
+      - name: run tests
+        run: |
+          npm i -g @sap/cds-dk
+          npm i
+          npm explore better-sqlite3 -- npm run install
+          npm run lint
+          npm run test
       #- name: Create Tag 
       #  uses: rickstaa/action-create-tag@v1.7.2
       #  with:
       #    tag: ${{ github.event.inputs.version }}
-      - name:  'Automated Version Bump'
+      - name:  'Automated Version Bump and Tag Creation'
         id: bump_version
         uses:  'phips28/gh-action-bump-version@master'
         env:
