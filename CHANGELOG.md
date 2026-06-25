@@ -4,6 +4,11 @@ All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 The format is based on [Keep a Changelog](http://keepachangelog.com/).
 
+## [v0.3.4] - 2026-06-25
+### :wrench: Chores
+- [`619a646`](https://github.com/Sven1410/event-broker/commit/619a646069ee0f66f01947cce1c6753e094e94fa) - add an id for bump_version *(commit by [@Sven1410](https://github.com/Sven1410))*
+
+
 ## [v0.3.3] - 2026-06-25
 ### :wrench: Chores
 - [`d912a8a`](https://github.com/Sven1410/event-broker/commit/d912a8a5d8dfc6f187a6f4396f5b9c7cfeb3f645) - reactivate release step *(commit by [@Sven1410](https://github.com/Sven1410))*
@@ -58,3 +63,4 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/).
 - Initial release
 [v0.3.2]: https://github.com/Sven1410/event-broker/compare/v0.0.4-initial-release-tree...v0.3.2
 [v0.3.3]: https://github.com/Sven1410/event-broker/compare/v0.3.2...v0.3.3
+[v0.3.4]: https://github.com/Sven1410/event-broker/compare/v0.3.3...v0.3.4
